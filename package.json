@@ -1,0 +1,26 @@
+{
+  "name": "cnbc-market",
+  "version": "1.0.0",
+  "description": "Stock market information from CNBC",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madnight/cnbc-market.git"
+  },
+  "author": "Fabian Beuke <mail@beuke.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madnight/cnbc-market/issues"
+  },
+  "homepage": "https://github.com/madnight/cnbc-market#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
