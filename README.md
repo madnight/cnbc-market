@@ -9,7 +9,7 @@ cnbcMarket().then( data => console.log(data) )
 ```
 
 Example Output
-```
+```js
 [ 
   { symbol: '.SPX',
     name: 'S&P 500 Index',
