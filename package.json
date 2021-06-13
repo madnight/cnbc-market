@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-	"test": "ava"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,6 @@
   },
   "devDependencies": {
     "ava": "^3.15.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.7"
   }
 }
