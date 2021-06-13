@@ -2,9 +2,11 @@
   "name": "cnbc-market",
   "version": "1.0.0",
   "description": "Stock market information from CNBC",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+	"test": "ava"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
+    "ava": "^3.15.0",
     "nodemon": "^1.19.1"
   }
 }

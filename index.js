@@ -1,7 +1,9 @@
-const axios = require('axios');
-const { get, map, pipe } = require('lodash/fp');
+import axios from 'axios'
+import lodash from 'lodash/fp.js';
 
-const cnbcMarket = async () => {
+const { get, map, pipe } = lodash;
+
+export default async function cnbcMarket() {
     const data = await axios("https://quote.cnbc.com/quote-html-webservice/"
         + "quote.htm?partnerId=2&requestMethod=quick&exthrs=1&noform=1&fund=1&"
         + "output=jsonp&symbols=.SPX|.IXIC|.FTSE|.N225|.HSI|.SSEC|.VIX|.GDAXI|"
@@ -21,8 +23,4 @@ const cnbcMarket = async () => {
             changePcnt: q.change_pct
         })),
     )(data.data)
-}
-
-module.exports = {
-    cnbcMarket
 }
